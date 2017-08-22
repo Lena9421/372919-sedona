@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   <div class="main-container">
 <header class="main-header">
-<a class="main-header-logo"><img src="img/logo-top.png"></a>
+<a class="main-header-logo"><img src="img/logo top.png"></a>
 	<nav class="main-navigation">
 		<ul class="site-navigation">
 			<li><a href="#">Информация</a></li>
@@ -17,21 +18,19 @@
 			<li><a href="hotels.html">Гостиницы</a></li>
 		</ul>
 	</nav>
-	
 </header>
 <main class="container">
-	<section class="intro" style="background-image: url(img/background-photo.jpg);height: 515px;">
+	<section class="intro" style="background-image: url(img/background photo.jpg);height: 515px;">
     <h1 class="vissualy-hidden">Добро пожаловать на страницу города Седона</h1>
-	<img src="img/Welcome.png" alt="Welcome">
+	<img src="img/welcome.png" alt="Welcome">
 	<img src="img/to the gorgeous.png" alt="to the gorgeous">
-	<img src="img/Sedona.png" alt="Седона">
-	<img src="img/Because the Grand  Canyon sucks_.png" alt="">
+	<img src="img/sedona.png" alt="Седона">
+	<img src="img/because the grand  canyon sucks.png" alt="Because the grand canyon sucks">
 </section>
-<section class="main-page-content">
+<section class="advantages">
+<h2 class="vissualy-hidden">Преимущества</h2>
 		<h2>Седона - небольшой городок  в Аризоне,<br>заслуживающий большего!</h2>
 		Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-	<section>
-	<h2 class="vissualy-hidden">Преимущества</h2>
 		<ol start="1" class="advantages">
 		<li>
 			<h3>Настоящий городок</h3>
@@ -57,7 +56,7 @@
 	    <li>
 			<h3>Там есть мост дьявола</h3>
 			<p class="item-content">Да, по нему можно<br>пройти!Если конечно<br>вы осмелитесь</p>
-			<img src="img/the devils's bridgejpg.jpg" width="512" height="256">
+			<img src="img/the devils bridge.jpg" width="512" height="256">
 	   </li>
 		<li>
 					<h3>Небольшая площадь</h3>
@@ -74,20 +73,21 @@
 		</ol>
 </section>
 <section class="search-form-title">
+<h2 class="vissualy-hidden">Поиск гостиницы в Седоне</h2>
 <h1>Заинтересовались?</h1>
 <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 <div>Поиск гостиницы в Седоне</div>	
 </section>
 <section class="search-form">
 <form>
-<label>Дата заезда</label>
-		<input type="date">
-		<label>Дата выезда</label>
-		<input type="date">
-		<label>Взрослые:</label>
-		<button>-</button><input type="number"><button>+</button>
-		<label>Дети:</label>
-		<button>-</button><input type="number"><button>+</button>
+<label for="check-in" >Дата заезда</label>
+		<input type="date" id="check-in">
+		<label for="check-out" >Дата выезда</label>
+		<input type="date" id="check-out">
+		<label for="adults">Взрослые:</label>
+		<button>-</button><input type="number" id="adults"><button>+</button>
+		<label for="children" >Дети:</label>
+		<button>-</button><input type="number" id="children"><button>+</button>
 	<button>Найти</button>
 </form>
 </section>
@@ -95,12 +95,12 @@
 <footer class="main-footer">
 	<div><a>#visitsedona</a></div>
 	<div><ul>
-		<li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-		<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-		<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true">T</i></a></li>
+		<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true">F</i></a></li>
+		<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true">Y</i></a></li>
 	</ul>
 	</div>
-	<div>Website by <a href="https://htmlacademy.ru/"><img src="img/logo_name.png" width="115" height="41"></a></div>
+	<div>Website by <a href="https://htmlacademy.ru/"><img src="img/logo name.png" width="115" height="41"></a></div>
 </footer>
 </div>
   </body>
