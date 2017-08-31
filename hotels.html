@@ -8,21 +8,24 @@
 </head>
 <body>
 <div class="main-container">
-	<header class="main-header">
-	<a class="main-header-logo" href="index.html"><img src="img/logo top.png"></a>
+<header>
 	<nav class="main-navigation">
 		<ul class="site-navigation">
 			<li><a href="#">Информация</a></li>
 			<li><a href="#">Фото и видео</a></li>
+			<li>
+			<a class="main-header-logo" href="index.html"><img src="img/logo-top.png"></a>
+			</li>
 			<li><a href="#">Карта штата</a></li>
 			<li class="site-navigation-current"><a>Гостиницы</a></li>
 		</ul>
-	</nav>
+	</nav>	
 </header>
 <main class="container">
-	<section class="hotel-selection" >
+	<section class="hotel-selection">
 	<h1 class="vissualy-hidden">Выбор инфраструктуры и типа жилья</h1>
 		<form class="filter-hotel-selection">
+		<div class="left-filters">
 		<fieldset>
 		 <legend class="hotel-selection-criteria">Инфраструктура:</legend>
 				<input type="checkbox" id="filter-swimming-pool" checked><label for="filter-swimming-pool">Бассейн</label>
@@ -35,6 +38,7 @@
 			   <input type="checkbox" id="filter-motel" checked><label for="filter-motel">Мотель</label>
 			   <input type="checkbox" id="filter-appartments" checked><label for="filter-appartments">	Аппартаменты</label>
 			  </fieldset>
+			</div>  
 			 <fieldset>
 	 <legend class="hotel-selection-criteria">Стоимость в сутки (Р):</legend>
 	<ul>
@@ -48,29 +52,31 @@
 	</section>
 	<section class="search-navigation">
 		<div>Найдено:3</div> 
-			<a href="#">Сортировка:</a>
-			<a href="#">По цене</a>
-			<a href="#">По типу</a>
-			<a href="#">По рейтингу</a>
+		<ul>
+			<li><a href="#">Сортировка:</a></li>
+			<li class="search-navigation-current"><a href="#" >По цене</a></li>
+			<li><a href="#">По типу</a></li>
+			<li><a href="#">По рейтингу</a></li>
+			</ul>
 	</section>
 	<section class="booking">
 	<h1 class="vissualy-hidden">Поиск средств размещения в Седоне</h1>
 	       <div class="product-info">
-				<img src="img/Amara resorts.jpg" width="136" height="91" alt="Гостиница Amara resort & SPA">
+				<img src="img/amara-resorts.jpg" width="136" height="91" alt="Гостиница Amara resort & SPA">
                 <h2 class="label label-four-star">Amara resort & SPA</h2>
                 <div class="type-of-accommodation">Гостиница</div><div class="price">от 4000 Р.</div>
                 <button>Подробнее</button><button>Забронировать</button>
                 </div>
                 <div class="rating">Рейтинг 8,5</div>
 			<div class="product-info">
-					<img src="img/desert quail inn.jpg" width="136" height="91" alt="Мотель Desert Quail Inn">
+					<img src="img/desert-quail-inn.jpg" width="136" height="91" alt="Мотель Desert Quail Inn">
 					<h2 class="label label-three-star">Desert Quail Inn</h2>
 					<div class="type-of-accommodation">Мотель</div><div class="price">от 3000 Р.</div>
 					<button>Подробнее</button><button>Забронировать</button>
 			</div>
 					<div class="rating">Рейтинг 8,9 </div>
 			<div class="product-info">
-					<img src="img/villas at pocco diablo.jpg" width="136" height="91" alt="Аппартаменты Villas at Poco Diablo">
+					<img src="img/villas-at-pocco-diablo.jpg" width="136" height="91" alt="Аппартаменты Villas at Poco Diablo">
 					<h2 class="label label-two-star">Villas at Poco Diablo</h2>
                 <div class="type-of-accommodation">Аппартаменты</div><div class="price">от 2000 Р.</div>
 					<button>Подробнее</button><button>Забронировать</button>
@@ -80,14 +86,12 @@
 </main>
 <footer class="main-footer">
 	<div><a href="#">#visitsedona</a></div>
-	<div class="social-btn">
-	<ul class="social-btn">
-		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true">T</i></a></li>
-		<li><a href="#">F<i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-		<li><a href="#">Y<i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+	<ul class="social-buttons">
+		<li><a href="#" class="social-btn"><span class="vissualy-hidden">Twitter</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><image overflow="visible" width="17" height="15" xlink:href="t.png"/><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a></li>
+		<li><a href="#" class="social-btn"><span class="vissualy-hidden">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><image overflow="visible" width="20" height="16" xlink:href="youtube.png"/><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a></li>
+		<li><a href="#" class="social-btn"><span class="joke"></span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>
 	</ul>
-	</div>
-	<div>Website by <img src="img/logo name.png"></div>
+	<div class="web-master">Website by <img src="img/logo-name.png"></div>
 </footer>
 </div>
 </body>
