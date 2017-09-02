@@ -421,12 +421,15 @@ footer div {
   justify-content: space-between;
   height: 165px;
 }
+fieldset {
+  position: relative;
+}
 .hotel-selection-criteria {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 25px;
-
+ 
 }
 .left-filters {
  width: 405px;
@@ -438,13 +441,14 @@ footer div {
 
 .left-filters fieldset {
   padding: 0;
-  width: 160px;
-  display: block;
+  width: 150px;
+  
 }
 
 .left-filters label {
   margin-bottom: 20px;
-  display: block;
+  position: relative;
+  
 }
 
 .left-filters input[type="checkbox"]
