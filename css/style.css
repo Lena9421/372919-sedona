@@ -1,14 +1,14 @@
 @font-face {
   font-family: "PT Sans";
-  src: url(../web/ptsans.woff2) format ("woff2"),
-       url(../web/ptsans.woff) format ("woff");
+  src: url(../fonts/ptsans.woff2) format ("woff2"),
+       url(../fonts/ptsans.woff) format ("woff");
        font-style: normal;
        font-weight: 400;
 }
 @font-face {
   font-family: "PT Sans";
-  src:  url(../web/ptsansbold.woff2) format ("woff2"),
-        url(../web/ptsansbold.woff) format ("woff");
+  src:  url(../fonts/ptsansbold.woff2) format ("woff2"),
+        url(../fonts/ptsansbold.woff) format ("woff");
         font-style: normal;
         font-weight: 700;
 }
@@ -347,6 +347,7 @@ ol {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url(../img/map.jpg);
 }
 .map {
   width: 100%;
