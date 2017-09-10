@@ -1,15 +1,18 @@
 @font-face {
   font-family: "PT Sans";
-  font-weight: 400;
-  src: url(../web/ptsans.woff),
-       url(../web/ptsans.woff2);
+  src: url(../web/ptsans.woff2) format ("woff2"),
+       url(../web/ptsans.woff) format ("woff");
+       font-style: normal;
+       font-weight: 400;
 }
 @font-face {
   font-family: "PT Sans";
-  font-weight: 800;
-  src:  url(../web/ptsansbold.woff),
-        url(../web/ptsansbold.woff2);
+  src:  url(../web/ptsansbold.woff2) format ("woff2"),
+        url(../web/ptsansbold.woff) format ("woff");
+        font-style: normal;
+        font-weight: 700;
 }
+
 body {
   font-size: 14px;
   text-transform: uppercase;
@@ -17,7 +20,6 @@ body {
   color: black;
   text-align: center;
   line-height: 1.5;
-  font-weight: 400;
   background-color: #f2f2f2;
 }
 .main-container {
@@ -34,15 +36,13 @@ h1{
   font-size: 30px;
   font-family: "PT Sans","Arial",sans-serif;
   color: rgb(0, 0, 0);
-  font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
 }
 h2 {
   font-size: 21px;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   color: rgb(0, 0, 0);
-  font-weight: bold;
   text-transform: uppercase;
   line-height: 1.238;
   text-align: center;
@@ -50,7 +50,6 @@ h2 {
 h3 {
   font-size: 21px;
   font-family: "PT Sans","Arial",sans-serif;
-  font-weight: 500;
   line-height: 25px;
   text-transform: uppercase;
 }
@@ -59,7 +58,8 @@ h3 {
   position: absolute;
   top: 1px;
   left: 50%;
-  margin: 0 0 0 -69px;width: 138px;
+  margin: 0 0 0 -69px;
+  width: 138px;
   height: 70px;
 }
 
@@ -69,6 +69,7 @@ h3 {
 .site-navigation  {
   height: 56px;
   padding: 0;
+  font-weight: 500;
   letter-spacing: 0.3px;
   display: flex;
   flex-direction: row;
@@ -193,8 +194,6 @@ ol {
   justify-content: space-around;
   align-items: center;
 }
-
-
 .blue-item {
   background-color: #81b3d2;
   color: white;
@@ -305,13 +304,16 @@ ol {
 	display: flex;
 	flex-direction: column;
   justify-content: space-between;
-  
 }
 .search-form-title span {
   height: 206px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.search-form-title h1 {
+  font-family: "PT Sans","Arial",sans-serif;
+  font-weight: 600;
 }
 .hotel-search-btn {
   align-self: center;
@@ -374,9 +376,10 @@ ol {
 }
 .search-form-row input {
 width: 290px;
+font-family: "PT Sans","Arial",sans-serif;
+font-weight: bolder;
 text-transform: uppercase;
 font-size: 13px;
-font-weight: bolder;
 padding-left: 12px;
 }
 .search-form-row {
@@ -547,8 +550,7 @@ footer a {
 }
 /*Hotels*/
 .hotel-selection {
-  height: 218px;
-  width: 1200px;
+  min-height: 218px;
   background-image: url(../img/filter-back.png);
   background-position: 40% 50%;
   background-size: cover;
@@ -725,13 +727,11 @@ footer a {
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
-
 .btn-transparent:hover {
   color: #000000;
   background: #ffffff;
   cursor: pointer;
 }
-
 .search-navigation  {
  margin-left: 73px;
   height: 87px;
@@ -758,9 +758,7 @@ footer a {
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
-
 }
-
 .search-navigation ul li{
   display: flex;
   flex-direction: row;
@@ -794,9 +792,6 @@ border-bottom: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-
-
 }
 .up-down-buttons a path:hover,
 .up-down-buttons a path:focus {
@@ -808,7 +803,7 @@ border-bottom: none;
   cursor: pointer;
 }
 .booking {
-  height: 455px;
+  min-height: 150px;
   width: 1200px;
   display: flex;
   flex-direction: column;
