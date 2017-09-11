@@ -57,7 +57,7 @@ h3
 {
     position: absolute;
     z-index: 10;
-    top: 1px;
+    top: 0px;
     left: 50%;
 
     width: 138px;
@@ -787,7 +787,6 @@ footer a
     font-weight: 400;
     line-height: 21px;
 
-    margin-bottom: 25px;
 }
 .left-filters
 {
@@ -813,7 +812,7 @@ footer a
 {
     position: relative;
     margin-bottom: 25px;
-    padding-left: 38px;
+    padding-left: 10px;
 
     text-align: left;
 }
@@ -826,9 +825,7 @@ footer a
 {
     cursor: pointer;
 }
-.left span {
-  margin-top: 150px;
-}
+
 .left-filters input[type='checkbox'] + .checkbox-indicator::before
 {
     position: absolute;
@@ -850,8 +847,12 @@ footer a
     background: url(../img/checkbox-on.svg);
     background-color: none;
 }
-.filter-option li {
-  margin: 150px;
+.filter-option  {
+  margin-top: 25px;
+}
+.left-filters ul {
+padding: 0;
+margin: 0;
 }
 .filter-range
 {
