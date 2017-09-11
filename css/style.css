@@ -1,22 +1,8 @@
-@font-face {
-  font-family: "PT Sans";
-  src: url(../fonts/ptsans.woff2) format ("woff2"),
-       url(../fonts/ptsans.woff) format ("woff");
-       font-style: normal;
-       font-weight: 400;
-}
-@font-face {
-  font-family: "PT Sans";
-  src:  url(../fonts/ptsansbold.woff2) format ("woff2"),
-        url(../fonts/ptsansbold.woff) format ("woff");
-        font-style: normal;
-        font-weight: 700;
-}
-
 body {
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: 'PT Sans','Arial', sans-serif;
+  font-style: normal;
   color: black;
   text-align: center;
   line-height: 1.5;
@@ -34,14 +20,14 @@ box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 h1{
   font-size: 30px;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: 'PT Sans','Arial', sans-serif;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 1.2;
 }
 h2 {
   font-size: 21px;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: 'PT Sans','Arial', sans-serif;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 1.238;
@@ -49,7 +35,7 @@ h2 {
 }
 h3 {
   font-size: 21px;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: 'PT Sans','Arial', sans-serif;
   line-height: 25px;
   text-transform: uppercase;
 }
@@ -124,42 +110,22 @@ header {
   height: 509px;
   background-image: url(../img/background-photo.png);
   background-position: 20% 22%;
+  background-color: #9cbbd4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .intro::after {
   content: '';
   height: 65px;
   width: 1200px;
-  background-image: url(../img/one-shape.png);
+  background-image: url(../img/shape.png);
   position: absolute;
   left: 0px;
   top: 508px;
 }
-.intro-welcome {
-  position: absolute;
-  top: 135px;
-  left: 505px;
 
-}
-.intro-to-the-gorgeous {
-  position: absolute;
-  top: 190px;
-  left: 515px;
-}
-.intro-hyphen {
-  position: absolute;
-  top: 200px;
-  left: 475px;
-}
-.intro-sedona {
-  position: absolute;
-  top: 270px;
-  left: 372px;
-}
-.intro-because {
-  position: absolute;
-  top: 405px;
-  left: 454px;
-}
 .about {
   height: 216px;
   text-align: center;
@@ -168,6 +134,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.about h2 {
+  padding: 0 295px;
 }
 .about p {
   letter-spacing: 1;
@@ -178,6 +147,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .features {
 	display: flex;
 	flex-direction: row;
@@ -222,6 +192,7 @@ ol {
   letter-spacing: 1.5;
   font-weight: 500;
   margin: 0;
+  padding: 0 125px;
 }
 .blue-item p {
   letter-spacing: 1;
@@ -258,6 +229,7 @@ ol {
  align-items: center;
 }
 .features-without-number p {
+  width: 300px;
   margin: 0;
   line-height: 1.5;
   letter-spacing: 1;
@@ -296,15 +268,21 @@ ol {
 }
 
 .last-features p {
+  width: 260px;
+  margin-right: 0;
   line-height: 1.5;
   font-weight: 400;
 }
 .last-features h3 {
   letter-spacing: 1;
-  font-weight: 600;
+  font-weight: 500;
+  padding: 0 140px;
 }
 .last-features article {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .search-form-title  {
@@ -312,6 +290,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .search-form-title h1 {
   font-family: "PT Sans","Arial",sans-serif;
@@ -321,6 +300,7 @@ ol {
 .search-form-title p {
   margin-top: 0;
   padding-bottom: 40px;
+  width: 440px;
 }
 .hotel-search-btn {
   align-self: center;
