@@ -452,6 +452,7 @@ ol
     height: 590px;
 
     background-image: url(../img/map.jpg);
+    background-color: #cbdda9;
 
     flex-wrap: wrap;
     justify-content: center;
@@ -496,6 +497,7 @@ ol
     justify-content: space-between;
     align-items: center;
 }
+
 .hotel-search-form input
 {
     height: 36px;
@@ -812,9 +814,9 @@ footer a
 {
     position: relative;
     margin-bottom: 25px;
-    padding-left: 10px;
+    padding-left: 40px;
 
-    text-align: left;
+    
 }
 .left-filters label:hover,
 .left-filters label:focus
@@ -826,10 +828,10 @@ footer a
     cursor: pointer;
 }
 
-.left-filters input[type='checkbox'] + .checkbox-indicator::before
+.left-filters input[type='checkbox'] + label::before
 {
     position: absolute;
-    left: 0;
+    left: 0px;
     
     width: 23px;
     height: 23px;
@@ -840,7 +842,7 @@ footer a
     background-color: none;
 }
 
-.left-filters input[type='checkbox']:checked + .checkbox-indicator::before
+.left-filters input[type='checkbox']:checked + label::before
 {
     width: 26px;
     height: 23px;
@@ -849,6 +851,7 @@ footer a
 }
 .filter-option  {
   margin-top: 25px;
+  text-align: left;
 }
 .left-filters ul {
 padding: 0;
@@ -928,6 +931,9 @@ margin: 0;
     color: inherit;
     border: none;
     background: none;
+    display: inline-block;
+    vertical-align: top;
+    height: 36px;
 }
 .range-controls
 {
