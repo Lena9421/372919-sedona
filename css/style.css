@@ -416,17 +416,16 @@ ol
     margin-top: 0;
     padding-bottom: 40px;
 }
-.hotel-search-btn
-{
+.hotel-search-btn {
     font-size: 21px;
     font-weight: 400;
 
     padding: 30px 137px;
 
     color: white;
-    border-top: none;
-    border-left: none;
+  
     background-color: #766357;
+    border: none;
 
     align-self: center;
 }
