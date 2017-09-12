@@ -159,8 +159,7 @@ header
     justify-content: center;
     align-items: center;
 }
-.intro::after
-{
+.intro::after {
     position: absolute;
     top: 508px;
     left: 0;
@@ -173,8 +172,7 @@ header
     background-image: url(../img/shape.png);
 }
 
-.about
-{
+.about {
     display: flex;
     flex-direction: column;
 
@@ -480,8 +478,7 @@ ol
     justify-content: center;
     align-items: center;
 }
-.hotel-search-form
-{
+.hotel-search-form {
     font-weight: 600;
 
     display: flex;
@@ -498,15 +495,13 @@ ol
     align-items: center;
 }
 
-.hotel-search-form input
-{
+.hotel-search-form input {
     height: 36px;
 
     border: none;
     background-color: #f2f2f2;
 }
-.search-form-row input
-{
+.search-form-row input {
     font-family: 'PT Sans','Arial',sans-serif;
     font-size: 13px;
     font-weight: bolder;
@@ -544,6 +539,22 @@ ol
 
     border: none;
     background-color: #f2f2f2;
+}
+ 
+.search-form-row input:hover {
+    outline: none;
+   
+}
+
+.search-form-row button:active {
+    outline: none;
+
+}
+.search-form-row button svg:hover {
+    fill: #000000;
+}
+.search-form-row button svg:active {
+  fill: #81b3d2;
 }
 .search-form-col
 {
@@ -614,8 +625,7 @@ button
 
     text-transform: uppercase;
 }
-.find
-{
+.find {
     font-size: 21px;
 
     color: white;
@@ -752,7 +762,7 @@ footer a
 /*Hotels*/
 .hotel-selection
 {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
 
     min-height: 218px;
@@ -769,7 +779,7 @@ footer a
     display: flex;
     flex-direction: row;
 
-    width: 1056px;
+    width: 1200px;
 
     justify-content: space-between;
     align-items: center;
@@ -793,7 +803,8 @@ footer a
 
 }
 .left-filters
-{
+{   margin-left: 70px;
+    margin-top: 26px;
     display: flex;
     flex-direction: row;
 
@@ -865,6 +876,8 @@ margin: 0;
 
     width: 320px;
     padding: 0;
+    margin-right: 72px;
+    margin-top: 25px;
 }
 .filter-range-title
 {
@@ -935,7 +948,7 @@ margin: 0;
     background: none;
     display: inline-block;
     vertical-align: top;
-    height: 36px;
+    height: 35px;
 }
 .range-controls
 {
@@ -994,6 +1007,7 @@ margin: 0;
 
     margin: 0 auto;
     padding: 6px 35px;
+    margin-right: 95px;
 
     text-transform: uppercase;
 
