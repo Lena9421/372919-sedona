@@ -523,6 +523,7 @@ ol
     width: 458px;
     height: 36px;
     margin-right: 23px;
+    font-size: 0px;
 }
 .search-form-row label
 {
@@ -532,6 +533,7 @@ ol
     letter-spacing: 1;
 
     background-color: #fff;
+    font-size: 14px;
 }
 .search-form-row button
 {
