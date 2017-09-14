@@ -69,13 +69,12 @@ h3 {
 
     display: flex;
     flex-direction: row;
-
     height: 56px;
     margin: 0;
     padding: 0;
 
     text-decoration: none;
-    letter-spacing: .3px;
+    
     text-transform: uppercase;
 
     color: black;
@@ -389,6 +388,7 @@ ol {
     font-weight: 600;
 
     padding-top: 30px;
+     margin-bottom: 0;
 }
 .search-form-title p {
     width: 440px;
@@ -635,7 +635,8 @@ footer {
     width: 155px;
     height: 50px;
     margin: 0;
-    margin-left: 60px;
+    margin-left: 46px;
+    margin-top: 1px;
     padding: 0;
 
     justify-content: space-around;
@@ -652,6 +653,9 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+.social-buttons li svg {
+    margin-top: 6px;
+}
 .social-buttons li:hover,
 .social-buttons li:focus {
     cursor: pointer;
@@ -666,16 +670,16 @@ footer {
 .copyrights {
     display: flex;
     flex-direction: row;
-
+    height: 42px;
     width: 195px;
-
+    margin-left: 20px;
     color: black;
 
     justify-content: space-between;
-    align-items: center;
+   
 }
-.copyright {
-    align-self: center;
+.copyrights span {
+   margin-top: 10px;
 }
 .copyright:hover path,
 .copyright:focus path {
@@ -855,14 +859,15 @@ footer a {
     cursor: pointer;
     vertical-align: top;
 }
-.price-controls .min-price,
+
 .price-controls .max-price {
     width: 90px;
-    padding-left: 45px;
+    padding-left: 40px;
 }
 .price-controls .min-price {
     margin-right: 20px;
-    padding-left: 30px;
+    width: 90px;
+    padding-left: 25px;
 }
 
 .price-controls input {
@@ -872,7 +877,6 @@ footer a {
 
     width: 45px;
     height: 35px;
-    margin-left: 5px;
 
     vertical-align: top;
 
@@ -898,7 +902,7 @@ footer a {
 }
 .range-toggle {
     position: absolute;
-    top: -9px;
+    top: -10px;
 
     width: 4px;
     height: 4px;
@@ -969,8 +973,8 @@ footer a {
 .search-navigation ul {
     display: flex;
     flex-direction: row;
-
-    width: 350px;
+   padding-left: 45px;
+    width: 353px;
     margin: 0;
     margin-top: 5px;
 
