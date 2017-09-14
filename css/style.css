@@ -40,7 +40,7 @@ h2 {
     text-transform: uppercase;
 
     color: rgb(0, 0, 0);
-}
+} 
 h3 {
     font-family: 'PT Sans','Arial', sans-serif;
     font-size: 21px;
@@ -79,7 +79,7 @@ h3 {
 
     color: black;
 
-    align-items: center;
+   
 }
 nav ul {
     min-height: 56px;
@@ -92,6 +92,7 @@ nav li {
     position: relative;
 
     width: 20%;
+    padding-top: 15px;
 
     font-color: #777;
 }
@@ -134,7 +135,7 @@ header {
     display: flex;
     flex-direction: column;
 
-    height: 508px;
+    min-height: 508px;
 
     background-color: #9cbbd4;
     background-image: url(../img/background-photo.png);
@@ -776,7 +777,9 @@ footer {
 .left-filters label:active {
     cursor: pointer;
 }
-
+.left-filters li {
+    list-style-type: none;
+}
 input[type='checkbox'] + label::before {
     position: absolute;
     left: 0;
@@ -1040,7 +1043,6 @@ input[type='checkbox']:checked + label::before {
 
     justify-content: space-between;
 }
-
 .hotel-block {
     display: flex;
 
