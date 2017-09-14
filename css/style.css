@@ -202,6 +202,7 @@ ol {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    height: auto;
 
     flex-wrap: wrap;
     justify-content: space-around;
@@ -212,7 +213,7 @@ ol {
     flex-direction: column;
 
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     margin: 0;
     margin-bottom: 6px;
     padding: 0;
@@ -227,7 +228,7 @@ ol {
     display: flex;
     flex-direction: column;
 
-    height: 150px;
+    min-height: 150px;
     margin-bottom: 14px;
 
     justify-content: space-between;
@@ -263,7 +264,7 @@ ol {
 .features-without-number {
     display: flex;
     flex-direction: row;
-
+    padding: 115px 0 0 0;
     min-height: 324px;
     margin: 0;
     padding: 0;
@@ -271,7 +272,7 @@ ol {
     color: #333;
 
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .features-without-number ul  {
     height: auto;
@@ -316,6 +317,7 @@ ol {
     position: absolute;
    bottom: 53px;
    right: -15px;
+   top: -95px;
 
     width: 74px;
     height: 70px;
