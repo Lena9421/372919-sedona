@@ -22,7 +22,7 @@ body {
 .vissualy-hidden {
     display: none;
 }
-.main-container h1 {
+h1 {
     font-family: 'PT Sans','Arial', sans-serif;
     font-size: 30px;
     line-height: 1.2;
@@ -31,7 +31,7 @@ body {
 
     color: rgb(0, 0, 0);
 }
-.main-container h2 {
+h2 {
     font-family: 'PT Sans','Arial', sans-serif;
     font-size: 21px;
     line-height: 1.238;
@@ -41,7 +41,7 @@ body {
 
     color: rgb(0, 0, 0);
 }
-.main-container h3 {
+h3 {
     font-family: 'PT Sans','Arial', sans-serif;
     font-size: 21px;
     line-height: 25px;
