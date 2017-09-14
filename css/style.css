@@ -1141,14 +1141,23 @@ footer a {
     height: 30px;
 
     justify-content: space-between;
-   
+}
+.hotel-right-column {
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+.stars {
+    align-self: flex-end;
 }
 .rating {
     display: flex;
 
     width: 110px;
     height: 27px;
-    margin-bottom: 30px;
+    
 
     color: #666;
     border: 1px solid #f2f2f2;
@@ -1168,40 +1177,4 @@ footer a {
     cursor: pointer;
 
     color: #e1e1e1;
-}
-.hotel-title-three-star:after {
-    position: absolute;
-    right: 70px;
-
-    width: 71px;
-    height: 20px;
-
-    content: '';
-
-    color: black;
-    background-image: url(../img/star.svg);
-}
-.hotel-title-four-star:after {
-    position: absolute;
-    right: 70px;
-
-    width: 93px;
-    height: 20px;
-
-    content: '';
-
-    color: black;
-    background-image: url(../img/star.svg);
-}
-.hotel-title-two-star:after {
-    position: absolute;
-    right: 70px;
-
-    width: 46px;
-    height: 20px;
-
-    content: '';
-
-    color: black;
-    background-image: url(../img/star.svg);
 }
