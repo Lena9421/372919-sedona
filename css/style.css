@@ -132,8 +132,6 @@ header {
     min-height: 56px;
 }
 .intro {
-    display: flex;
-    flex-direction: column;
 
     min-height: 508px;
 
@@ -145,7 +143,7 @@ header {
     align-items: center;
 }
 .intro img {
-    margin-bottom: 5px;
+    padding-top: 75px;
 }
 .intro::after {
     position: absolute;
@@ -371,6 +369,7 @@ header {
     padding: 0 140px;
     line-height: 21px;
     letter-spacing: 1;
+    width: 120px;
 }
 .last-features article {
     display: flex;
