@@ -58,7 +58,6 @@ h3 {
     height: 70px;
     margin: 0 0 0 -69px;
 }
-
 .main-navigation {
     height: 56px;
 }
@@ -92,20 +91,15 @@ nav ul li {
 
     font-color: #777;
 }
-nav ul li:nth-child(2) {
-    margin-left: px;
-}
 nav ul li:nth-child(3) {
     margin-left: 240px;
 }
-nav ul li:nth-child(4) {
-    margin-left: px;
+nav ul li:nth-child(4) a {
+   padding-left: 11px;
 }
-
 nav  a {
     color: black;
 }
-
 nav a:hover,
 nav a:focus {
     cursor: pointer;
@@ -173,12 +167,11 @@ header {
     align-items: center;
 }
 .about h2 {
-    padding: 0 295px;
-    
+    padding: 0 370px;
+    width: 460px;
 }
 .about p {
     letter-spacing: 1;
-    
 }
 .all-advantages {
     display: flex;
@@ -401,7 +394,7 @@ ol {
     font-size: 21px;
     font-weight: bold;
     height: 86px;
-    width: 570px;
+    width: 568px;
     margin-bottom: 2px;
   
     color: white;
@@ -481,12 +474,11 @@ ol {
 }
 .search-form-row input {
     font-family: 'PT Sans','Arial',sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bolder;
 
     width: 290px;
     padding-left: 14px;
-
     text-transform: uppercase;
 }
 .search-form-row {
@@ -831,7 +823,8 @@ footer a {
 
     position: relative;
 
-    height: 36px;
+    height: 34px;
+    width: 315px;
     margin-bottom: 20px;
 
     border: 2px solid #fff;
@@ -856,6 +849,7 @@ footer a {
 
     display: inline-block;
 
+
     cursor: pointer;
     vertical-align: top;
 }
@@ -864,10 +858,11 @@ footer a {
     width: 90px;
     padding-left: 40px;
 }
+
 .price-controls .min-price {
     margin-right: 20px;
     width: 90px;
-    padding-left: 25px;
+    padding-left: 30px;
 }
 
 .price-controls input {
@@ -991,6 +986,9 @@ footer a {
     color: black;
     border-bottom: none;
 }
+.search-navigation li:nth-child(2) a {
+    margin-left: 5px;
+}
 .search-navigation ul a {
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
@@ -1094,7 +1092,7 @@ footer a {
     margin-bottom: 0;
     height: 26px;
     text-align: left;
-    letter-spacing: 2;
+    
 }
 
 .buttons button {
