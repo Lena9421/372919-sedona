@@ -135,7 +135,7 @@ header {
     flex-direction: column;
 
     width: 1200px;
-    height: 216px;
+    min-height: 216px;
 
     text-align: center;
 
@@ -971,7 +971,7 @@ input[type='checkbox']:checked + label::before {
     justify-content: space-between;
     align-items: center;
 }
-.search-navigation div {
+.search-navigation .hotel-sorting {
     display: flex;
 }
 .search-navigation span {
@@ -1011,8 +1011,8 @@ input[type='checkbox']:checked + label::before {
     border-bottom: 1px dotted #81b3d2;
 }
 
-.search-navigation-list ul a:hover,
-.search-navigation-list ul a:focus {
+.search-navigation-list a:hover,
+.search-navigation-list a:focus {
     cursor: pointer;
 
     color: #81b3d2;
@@ -1108,6 +1108,7 @@ input[type='checkbox']:checked + label::before {
     margin-bottom: 0;
     font-family: 'PT Sans','Arial', sans-serif;
     font-size: 21px;
+    color: black;
     line-height: 1.238;
     text-align: center;
     text-transform: uppercase;
