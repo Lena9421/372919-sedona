@@ -965,8 +965,9 @@ footer {
     display: inline-block;
 
     width: 45px;
-    height: 35px;
-    padding-bottom: 10px;
+    height: 23px;
+    padding-top: 8px;
+    padding-bottom: 6px;
     vertical-align: top;
 
     color: inherit;
