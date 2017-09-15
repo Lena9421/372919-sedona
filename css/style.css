@@ -10,7 +10,7 @@ body {
     color: black;
     background-color: #f2f2f2;
 }
-/*Решение прыгающих кнопок*/
+/*Решение прыгающих кнопок в IE*/
 button:active span,
 button:focus span
 {
@@ -456,8 +456,20 @@ header {
     border: none;
     background-color: #766357;
 
-    -ms-flex-item-align: center;
     align-self: center;
+}
+.search-form-title .search-btn {
+    padding-top: 20px;
+    font-family: 'PT Sans','Arial',sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 2px;
+
+    text-transform: uppercase;
+
+    color: white;
+    border: none;
+    background-color: #766357;
 }
 .hotel-search-btn:hover,
 .hotel-search-btn:focus {
@@ -465,7 +477,19 @@ header {
 
     background-color: #604e43;
 }
+.hotel-search-btn:hover span,
+.hotel-search-btn:focus span{
+    cursor: pointer;
+
+    background-color: #604e43;
+}
 .hotel-search-btn:active {
+    cursor: pointer;
+
+    color: #928a85;
+    background-color: #503e33;
+}
+.hotel-search-btn:active span{
     cursor: pointer;
 
     color: #928a85;
