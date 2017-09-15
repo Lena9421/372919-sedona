@@ -12,11 +12,10 @@ body {
 }
 /*Решение прыгающих кнопок в IE*/
 button:active span,
-button:focus span
-{
+button:focus span {
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 .main-container {
@@ -26,7 +25,7 @@ button:focus span
     margin: 0 auto;
 
     background-color: white;
-            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
 }
 .vissualy-hidden {
     display: none;
@@ -50,7 +49,7 @@ button:focus span
     top: 0;
 
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     min-height: 56px;
     margin: 0;
@@ -61,8 +60,7 @@ button:focus span
 
     color: black;
 
-  
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 nav ul {
     min-height: 56px;
@@ -122,9 +120,7 @@ header {
     background-image: url(../img/background-photo.png);
     background-position: 20% 21%;
 
-  
     justify-content: center;
-   
     align-items: center;
 }
 .intro img {
@@ -148,9 +144,7 @@ header {
 
     text-align: center;
 
- 
     justify-content: center;
-   
     align-items: center;
 }
 .about h2 {
@@ -166,23 +160,19 @@ header {
 }
 
 .all-advantages {
-   
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 1200px;
     min-height: 1098px;
 
-    
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .features {
-  
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
-   
     justify-content: space-around;
 }
 .features h3 {
@@ -197,7 +187,6 @@ header {
     height: 256px;
 }
 .all-advantages ol {
-  
     display: flex;
 
     height: auto;
@@ -205,15 +194,11 @@ header {
     margin-bottom: 0;
     padding: 0;
 
-    
-        flex-wrap: wrap;
-    
+    flex-wrap: wrap;
     justify-content: space-around;
-   
     align-items: center;
 }
 .blue-item {
-   
     display: flex;
         flex-direction: column;
 
@@ -289,9 +274,8 @@ header {
     text-transform: uppercase;
 }
 .features-without-number {
-  
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     min-height: 324px;
     margin: 0;
@@ -299,25 +283,21 @@ header {
 
     color: #333;
 
-    
-        flex-wrap: wrap;
-    
+    flex-wrap: wrap;
     align-items: flex-end;
 }
 .features-without-number ul {
     height: auto;
 }
 .features-without-number li {
-   
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
     width: 400px;
     min-height: 190px;
     margin: 0;
     padding: 0;
 
-    
     align-items: center;
 }
 .features-without-number p {
@@ -372,7 +352,7 @@ header {
 }
 .last-features {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
     width: 400px;
     height: 256px;
@@ -380,8 +360,7 @@ header {
 
     background-color: #eee;
 
-    
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -404,7 +383,7 @@ header {
 }
 .last-features article {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
     margin-bottom: 20px;
 
@@ -413,7 +392,7 @@ header {
 
 .search-form-title {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
     height: 293px;
 
@@ -459,11 +438,12 @@ header {
     align-self: center;
 }
 .search-form-title .search-btn {
-    padding-top: 20px;
     font-family: 'PT Sans','Arial',sans-serif;
     font-size: 21px;
     font-weight: bold;
+
     margin-bottom: 2px;
+    padding-top: 20px;
 
     text-transform: uppercase;
 
@@ -478,7 +458,7 @@ header {
     background-color: #604e43;
 }
 .hotel-search-btn:hover span,
-.hotel-search-btn:focus span{
+.hotel-search-btn:focus span {
     cursor: pointer;
 
     background-color: #604e43;
@@ -489,7 +469,7 @@ header {
     color: #928a85;
     background-color: #503e33;
 }
-.hotel-search-btn:active span{
+.hotel-search-btn:active span {
     cursor: pointer;
 
     color: #928a85;
@@ -497,16 +477,14 @@ header {
 }
 .maps {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     height: 590px;
 
     background-color: #cbdda9;
     background-image: url(../img/map.jpg);
 
-    
-        flex-wrap: wrap;
-    
+    flex-wrap: wrap;
     justify-content: center;
 }
 .map {
@@ -521,7 +499,6 @@ header {
     position: relative;
     z-index: 1;
 
-    
     display: flex;
 
     width: 570px;
@@ -529,17 +506,14 @@ header {
 
     background-color: white;
 
-    
     justify-content: center;
-    
     align-items: center;
 }
 .hotel-search-form {
     font-weight: 600;
 
-    
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 459px;
     height: 300px;
@@ -547,12 +521,8 @@ header {
 
     background-color: white;
 
-    
-  
-        flex-wrap: wrap;
-    
+    flex-wrap: wrap;
     justify-content: space-between;
-   
     align-items: center;
 }
 
@@ -689,7 +659,7 @@ fieldset {
 }
 footer {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     height: 118px;
 
@@ -700,14 +670,12 @@ footer {
     z-index: 1;
     bottom: 0;
 
-
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 1200px;
 
     background: rgba(255, 255, 255, .9);
-
 }
 .social-buttons {
     display: flex;
@@ -731,7 +699,6 @@ footer {
     background-color: #81b3d2;
 
     justify-content: space-around;
- 
     align-items: center;
 }
 .social-buttons svg {
@@ -750,14 +717,13 @@ footer {
 }
 .copyrights {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 195px;
     height: 42px;
     margin-right: 5px;
 
     color: black;
-
 
     justify-content: space-between;
 }
@@ -796,7 +762,7 @@ footer {
 /*Hotels*/
 .hotel-selection {
     display: inline-block;
-        flex-direction: row;
+    flex-direction: row;
 
     min-height: 217px;
 
@@ -809,12 +775,11 @@ footer {
 }
 .filter-hotel-selection {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 1200px;
 
     justify-content: space-between;
-  
     align-items: center;
 }
 .filter-hotel-selection fieldset {
@@ -833,14 +798,13 @@ footer {
 }
 .left-filters {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 410px;
     min-height: 165px;
     margin-top: 26px;
     margin-left: 70px;
 
-    
     justify-content: space-between;
 }
 
@@ -933,8 +897,7 @@ footer {
     height: 22px;
 
     content: '';
-
-   transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 
     background: #fff;
 }
@@ -943,8 +906,10 @@ footer {
     line-height: 38px;
 
     display: inline-block;
-    padding-bottom: 0;
+
     margin-bottom: 25px;
+    padding-bottom: 0;
+
     cursor: pointer;
     vertical-align: top;
 }
@@ -962,16 +927,16 @@ footer {
 
 .price-controls input {
     font: inherit;
+    line-height: 14px;
 
     display: inline-block;
 
     width: 45px;
     height: 14px;
+    margin-bottom: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-bottom: 10px;
-    line-height: 14px;
-    
+
     vertical-align: top;
 
     color: inherit;
@@ -1045,13 +1010,13 @@ footer {
 }
 .search-navigation {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 1056px;
     height: 86px;
     margin-left: 73px;
+
     justify-content: space-between;
-    
     align-items: center;
 }
 .search-navigation .hotel-sorting {
@@ -1061,16 +1026,18 @@ footer {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+
     align-self: center;
 }
 .search-navigation-list {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 353px;
     margin: 0;
     margin-top: 5px;
     padding-left: 45px;
+
     justify-content: space-between;
     align-self: center;
 }
@@ -1078,7 +1045,8 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
+
     justify-content: space-around;
 }
 .search-navigation .sorting {
@@ -1110,7 +1078,7 @@ footer {
 }
 .up-down-buttons {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 35px;
     height: 15px;
@@ -1130,10 +1098,11 @@ footer {
 }
 .booking {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
     width: 1200px;
     min-height: 150px;
+
     justify-content: space-between;
 }
 .hotel-block {
@@ -1143,6 +1112,7 @@ footer {
     min-height: 150px;
 
     border-bottom: 1px solid #eee;
+
     justify-content: space-between;
 }
 .hotel-block:first-child {
@@ -1158,14 +1128,14 @@ footer {
 }
 .product-info {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 
     width: 429px;
     height: 147px;
-    justify-content: space-between;
 
+    justify-content: space-between;
     align-items: center;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .product-info img {
@@ -1181,7 +1151,7 @@ footer {
 
     text-align: left;
 
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .hotel-title {
@@ -1253,13 +1223,11 @@ footer {
     width: 182px;
     height: 30px;
 
-
     justify-content: space-between;
 }
 .hotel-right-column {
-
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
     height: 94px;
 
