@@ -867,7 +867,7 @@ footer {
 .left-filters li {
     list-style-type: none;
 }
-input[type='checkbox'] + label::before {
+.criteria[type='checkbox'] + label::before {
     position: absolute;
     left: 0;
 
@@ -880,7 +880,7 @@ input[type='checkbox'] + label::before {
     background-color: none;
 }
 
-input[type='checkbox']:checked + label::before {
+.criteria[type='checkbox']:checked + label::before {
     width: 26px;
     height: 23px;
 
@@ -943,7 +943,7 @@ input[type='checkbox']:checked + label::before {
     line-height: 38px;
 
     display: inline-block;
-
+    padding-bottom: 10px;
     cursor: pointer;
     vertical-align: top;
 }
@@ -966,7 +966,7 @@ input[type='checkbox']:checked + label::before {
 
     width: 45px;
     height: 35px;
-
+    padding-bottom: 3px;
     vertical-align: top;
 
     color: inherit;
