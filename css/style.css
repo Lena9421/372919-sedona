@@ -1157,7 +1157,7 @@ input[type='checkbox']:checked + label::before {
 }
 .search-navigation span {
     font-size: 21px;
-    font-weight: 600;
+    font-weight: bold;
     line-height: 26px;
 
     -ms-flex-item-align: center;
@@ -1201,10 +1201,14 @@ input[type='checkbox']:checked + label::before {
 }
 .search-navigation li:nth-child(2) {
     margin-left: 5px;
+
 }
 .search-navigation-list a {
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
+}
+.search-navigation-current a {
+    color: #81b3d2;
 }
 .search-navigation-list a:hover,
 .search-navigation-list a:focus {
@@ -1340,7 +1344,8 @@ input[type='checkbox']:checked + label::before {
 .hotel-title {
     font-family: 'PT Sans','Arial', sans-serif;
     font-size: 21px;
-    line-height: 1.238;
+    line-height: 21px;
+    font-weight: bold;
 
     height: 26px;
     margin-top: 0;
@@ -1432,6 +1437,9 @@ input[type='checkbox']:checked + label::before {
 .stars {
     -ms-flex-item-align: end;
     align-self: flex-end;
+}
+.star {
+    margin-right: 3px;
 }
 .rating {
     display: -webkit-box;
