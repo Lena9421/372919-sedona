@@ -943,7 +943,8 @@ footer {
     line-height: 38px;
 
     display: inline-block;
-    padding-bottom: 15px;
+    padding-bottom: 0;
+    margin-bottom: 25px;
     cursor: pointer;
     vertical-align: top;
 }
