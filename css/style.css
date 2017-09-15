@@ -10,6 +10,15 @@ body {
     color: black;
     background-color: #f2f2f2;
 }
+/*Решение прыгающих кнопок*/
+button:active span,
+button:focus span
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
 .main-container {
     position: relative;
 
