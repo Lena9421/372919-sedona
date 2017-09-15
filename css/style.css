@@ -18,13 +18,6 @@ button:focus span
     top: 0px;
     left: 0px;
 }
-button:active,
-button:focus
-{
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
 
 .main-container {
     position: relative;
