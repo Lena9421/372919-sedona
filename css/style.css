@@ -943,7 +943,7 @@ footer {
     line-height: 38px;
 
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     cursor: pointer;
     vertical-align: top;
 }
@@ -966,7 +966,7 @@ footer {
 
     width: 45px;
     height: 35px;
-    padding-bottom: 3px;
+    padding-bottom: 10px;
     vertical-align: top;
 
     color: inherit;
