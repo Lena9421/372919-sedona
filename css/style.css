@@ -499,8 +499,6 @@ header {
     position: relative;
     z-index: 1;
 
-    display: flex;
-
     width: 570px;
     height: 395px;
 
@@ -508,6 +506,12 @@ header {
 
     justify-content: center;
     align-items: center;
+}
+.search-window {
+    display: none;
+}
+.search-window-show {
+    display: block;
 }
 .hotel-search-form {
     font-weight: 600;
@@ -517,7 +521,9 @@ header {
 
     width: 459px;
     height: 300px;
-    margin-top: -20px;
+   
+     margin-top: 37px;
+   margin-left: 55px;
 
     background-color: white;
 
@@ -541,8 +547,8 @@ header {
     padding-left: 14px;
 
     text-transform: uppercase;
+    outline: none;
 }
-
 .search-form-row {
     font-size: 0;
 
@@ -569,6 +575,7 @@ header {
     height: 38px;
 
     border: none;
+    outline: none;
     background-color: #f2f2f2;
 }
 .search-form-row .calendar:active {
@@ -593,10 +600,12 @@ header {
 
     width: 23px;
     padding-left: 15px;
+    outline: none;
 }
 .search-form-col button {
     font-size: 24px;
     font-weight: 600;
+    outline: none;
 
     width: 37px;
     height: 38px;
@@ -636,6 +645,7 @@ fieldset {
 
     width: 459px;
     height: 58px;
+
 
     text-transform: uppercase;
 
@@ -1022,7 +1032,7 @@ footer {
 .search-navigation .hotel-sorting {
     display: flex;
 }
-.search-navigation span {
+.search-navigation .found {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
@@ -1042,19 +1052,21 @@ footer {
     align-self: center;
 }
 .search-navigation li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
 
     justify-content: space-around;
 }
 .search-navigation .sorting {
+    font-size: 12px;
     color: black;
     border-bottom: none;
 }
+.search-navigation .sorting:hover {
+    cursor: pointer;
+}
 .search-navigation li:nth-child(2) {
-    margin-left: 5px;
+    margin-left: 7px;
 }
 .search-navigation-list a {
     color: #cacaca;

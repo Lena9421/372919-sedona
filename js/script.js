@@ -5,3 +5,28 @@ function initMap () {
       zoom: 9
     });
 }
+ var btn = document.querySelector(".hotel-search-btn");
+ var popup = document.querySelector(".search-window");
+ var field = popup.querySelector("[name=checkin-day]");
+ var form = popup.querySelector("form");
+ var checkin = popup.querySelector("[name=checkin-day");
+ var checkout = popup.querySelector("[name=checkout-day");
+
+ btn.addEventListener("click", function(evt) {
+ popup.classList.toggle("search-window-show");
+ field.focus();
+});
+
+ form.addEventListener("submit", function(evt) {
+ 	if(!checkin.value || !checkout.value) {
+ 	evt.preventDefault();
+    console.log("Нужно ввести логи и пароль");
+ 	}
+ });
+
+search-window-show.addEventListener("keydown", function(evt) {
+	if (evt.keyCode === 27) {
+		if (popup.classList.contains("search-window-show")) {
+    popup.classList.toggle("search-window-show");
+	}
+});

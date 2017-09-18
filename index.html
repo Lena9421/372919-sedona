@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -102,17 +102,17 @@
         <span>Заинтересовались?</span>
         <p>Укажите предполагаемые даты поездки,
           <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" class="hotel-search-btn"><span class="search-btn">Поиск гостиницы в Седоне</span></button>
+        <button type="button" class="hotel-search-btn close"><span class="search-btn">Поиск гостиницы в Седоне</span></button>
       </section>
       <section class="maps">
         <h2 class="vissualy-hidden">Карта и окно поиска отеля в Седоне</h2>
         <div id="map" class="map">
         </div>
-        <div class="hotel-search">
+        <div class="hotel-search search-window">
           <form class="hotel-search-form">
             <div class="search-form-row">
               <label for="check-in">Дата заезда:</label>
-              <input type="text" id="check-in" value="24 апреля 2017">
+              <input type="text" name="checkin-day"  placeholder="24 апреля 2017">
               <button class="calendar" type="button">
                 <span class="vissualy-hidden">Календарь</span>
                 <span>
@@ -125,7 +125,7 @@
             </div>
             <div class="search-form-row">
               <label for="check-out">Дата выезда:</label>
-              <input type="text" id="check-out" value="4 июля 2017">
+              <input type="text" name="checkout-day" placeholder="4 июля 2017">
               <button class="calendar" type="button">
                 <span class="vissualy-hidden">Календарь</span>
                 <span>
@@ -195,7 +195,7 @@
       </footer>
     </main>
   </div>
-  <script src="js/min.js">
+  <script src="js/script.js">
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsZgvmBAHyx-NJ54gkDOa421WuIypmAQg&callback=initMap" async defer></script>
 </body>
