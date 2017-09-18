@@ -12,7 +12,6 @@ function initMap () {
  var checkin = popup.querySelector("[name=checkin-day");
  var checkout = popup.querySelector("[name=checkout-day");
 
-
  btn.addEventListener("click", function(evt) {
  popup.classList.toggle("search-window-show");
  field.focus();
@@ -30,5 +29,5 @@ window.addEventListener("keydown", function(evt) {
 	  if (popup.classList.contains("search-window-show")) {
         popup.classList.remove("search-window-show");
 	}
-}
+  }
 });
