@@ -12,6 +12,7 @@ function initMap () {
  var checkin = popup.querySelector("[name=checkin-day");
  var checkout = popup.querySelector("[name=checkout-day");
 
+
  btn.addEventListener("click", function(evt) {
  popup.classList.toggle("search-window-show");
  field.focus();
@@ -24,9 +25,10 @@ function initMap () {
  	}
  });
 
-search-window-show.addEventListener("keydown", function(evt) {
+window.addEventListener("keydown", function(evt) {
 	if (evt.keyCode === 27) {
-		if (popup.classList.contains("search-window-show")) {
-    popup.classList.toggle("search-window-show");
+	  if (popup.classList.contains("search-window-show")) {
+        popup.classList.remove("search-window-show");
 	}
+}
 });
