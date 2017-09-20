@@ -528,7 +528,11 @@ header {
     border: none;
     background-color: #766357;
 }
-.hotel-search-btn:hover,
+.hotel-search-btn:hover {
+    cursor: pointer;
+
+    background-color: #604e43;
+}
 .hotel-search-btn:focus {
     cursor: pointer;
 
